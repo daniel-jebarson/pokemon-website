@@ -1,23 +1,5 @@
-# import requests
-
-# # r = requests.get('https://pokeapi.co/api/v2/pokemon/pikachu')
-# # for i in r.json()["moves"]:
-# #     print(i["move"]["name"])
-
-# x=requests.get('https://pokeapi.co/api/v2/pokemon/pikachu')
-# print(x.json()["moves"][0]["move"]["name"])
-# url=x.json()["moves"][0]["move"]["url"]
-# z=requests.get(url)
-# # print(z.json()["flavor_text_entries"][0]["flavor_text"])
-# # print(z.json()["damage_class"]["name"])
-# # print(z.json()["accuracy"])
-# dictionary={"description":z.json()["flavor_text_entries"][0]["flavor_text"],
-# "move_name":x.json()["moves"][0]["move"]["name"],"damage_type":z.json()["damage_class"]["name"]
-# ,"accuracy":z.json()["accuracy"]}
-# print(dictionary)
 import requests
 import time
-
 
 class Pokemon:
 

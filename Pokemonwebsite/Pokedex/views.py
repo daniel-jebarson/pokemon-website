@@ -1,12 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .api import *
-# Create your views here.
-
 
 def home(request):
     return render(request, 'home.html', {'pokemon': 'Pikachu'})
-
 
 def pokemon(request, pk_name):
     pk = Pokemon(pk_name)
